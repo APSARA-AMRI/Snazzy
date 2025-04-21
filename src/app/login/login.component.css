@@ -1,0 +1,41 @@
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: #2575fc;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1a5bd6;
+  }
+  
+  .register-link {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 14px;
+  }
+  
