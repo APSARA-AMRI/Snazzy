@@ -10,10 +10,24 @@
   </nav>
 
   <div class="header-right">
-    <input type="text" class="search-box" placeholder="Search products..." />
+    <div class="search-container">
+      <input type="text" class="search-box" placeholder="Search products..." />
+      <i class="fas fa-search search-icon"></i>
+    </div>
+    <a routerLink="/notifications" class="icon-btn" title="Notifications">
+      <i class="fas fa-bell"></i>
+    </a>
     <a routerLink="/register" class="icon-btn">
       <i class="fa fa-user"></i>
     </a>
     <a routerLink="/cart" class="icon-btn"><i class="fa fa-shopping-cart"></i></a>
+  </div>
+  <div class="seller-container">
+    <div class="seller-icon">
+      <i class="fas fa-user-plus"></i>
+    </div>
+    <div class="seller-text">
+      <span>Become a Seller</span>
+    </div>
   </div>
 </header>

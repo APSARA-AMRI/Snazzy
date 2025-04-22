@@ -11,6 +11,7 @@
 .header-left {
   display: flex;
   align-items: center;
+  font-weight: 500;
 }
 
 .logo {
@@ -41,14 +42,6 @@
   align-items: center;
 }
 
-.search-box {
-  padding: 6px 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-right: 16px;
-  width: 200px;
-}
-
 .icon-btn {
   margin-left: 10px;
   font-size: 20px;
@@ -59,3 +52,67 @@
 .icon-btn:hover {
   color: #007bff;
 }
+
+/* Seller Container */
+.seller-container {
+  display: flex;
+  align-items: center;
+  background-color: #0074cc; /* Flipkart blue background */
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.seller-container:hover {
+  background-color: #005fa3; /* Darker blue on hover */
+  transform: translateY(-3px); /* Slight hover animation */
+}
+.seller-icon {
+  font-size: 24px;
+  color: #fff;
+  margin-right: 15px;
+}
+.seller-text span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* search box */
+/* Container for input and icon */
+.search-container {
+  position: relative;
+  width: 300px;
+}
+
+/* Search box styling */
+.search-box {
+  width: 100%;
+  padding: 12px 40px 12px 15px; /* Add padding on the right side for the icon */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Focused state for the search box */
+.search-box:focus {
+  border-color: #0074cc;
+}
+
+/* Search icon styling */
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #0074cc;
+  pointer-events: none; /* Prevent the icon from interfering with input interaction */
+}
+
+
