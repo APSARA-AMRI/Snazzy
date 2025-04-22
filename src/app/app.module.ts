@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ProductListComponent } from './product-list/product-list.component';
     LoginComponent,
     HeaderComponent,
     RegisterComponent,
-    ProductListComponent
+    ProductListComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,

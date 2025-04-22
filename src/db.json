@@ -1,0 +1,22 @@
+{
+  "user": [
+    {
+      "id": "0fa2",
+      "name": "Apsara",
+      "email": "apsaraamri@gmail.com",
+      "password": "Apsara@0910",
+      "dob": "2025-04-28",
+      "place": "Tiruchirappalli",
+      "gender": "Female"
+    },
+    {
+      "id": "8516",
+      "name": "Amrita",
+      "email": "apsaraamri@gmail.com",
+      "password": "Apsara@0910",
+      "dob": "2025-04-11",
+      "place": "Tiruchirappalli",
+      "gender": "Female"
+    }
+  ]
+}
