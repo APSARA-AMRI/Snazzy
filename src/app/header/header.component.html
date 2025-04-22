@@ -1,22 +1,19 @@
-<!-- navbar.component.html -->
-<nav class="navbar">
-    <div class="navbar-container">
-      <!-- Logo and brand -->
-      <div class="navbar-left">
-        <a routerLink="/" class="navbar-logo">
-          <img src="assets/logo.jpg" alt="Logo" />
-          <span>Snazzy</span>
-        </a>
-      </div>
-  
-      <!-- Navigation Links -->
-      <ul class="navbar-links">
-        <li><a routerLink="/products">Products</a></li>
-        <li><a routerLink="/register">Register
-        </a>
-        </li>
-        <li><a routerLink="/login">Login</a></li>
-      </ul>
-    </div>
+<header class="header">
+  <div class="header-left">
+    <img src="assets/logo.jpg" alt="ShopEase Logo" class="logo" />
+    <h1 class="brand">Snazzy</h1>
+  </div>
+
+  <nav class="nav-links">
+    <a routerLink="/">Products</a>
+    <a routerLink="/login">Login</a>
   </nav>
-  
+
+  <div class="header-right">
+    <input type="text" class="search-box" placeholder="Search products..." />
+    <a routerLink="/register" class="icon-btn">
+      <i class="fa fa-user"></i>
+    </a>
+    <a routerLink="/cart" class="icon-btn"><i class="fa fa-shopping-cart"></i></a>
+  </div>
+</header>

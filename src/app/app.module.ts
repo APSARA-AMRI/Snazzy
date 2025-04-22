@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { LogoutComponent } from './logout/logout.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { LogoutComponent } from './logout/logout.component';
     HeaderComponent,
     RegisterComponent,
     ProductListComponent,
-    LogoutComponent
+    LogoutComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,
