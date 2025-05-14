@@ -1,0 +1,4 @@
+tr,td,th{
+    border-collapse:collapse;
+    padding:10px;
+}

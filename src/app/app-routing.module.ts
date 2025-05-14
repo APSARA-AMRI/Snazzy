@@ -6,6 +6,8 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { LogoutComponent } from './logout/logout.component';
 import { AuthGuard } from './auth/auth.guard';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CartComponent } from './cart/cart.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 
 
@@ -28,7 +30,9 @@ const routes: Routes = [
     path:'logout', 
     component:LogoutComponent,
     canActivate:[AuthGuard]
-  }
+  },
+  { path: 'cart', component: CartComponent },
+  { path: 'notifications', component: NotificationsComponent }
       
 ]
 

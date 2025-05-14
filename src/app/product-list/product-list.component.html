@@ -4,7 +4,7 @@
     (click)="goToProduct(product.id)">
       <img [src]="product.image" alt="product image" />
       <h3>{{ product.title }}</h3>
-      <p>{{ product.price | currency }}</p>
+      <p>{{ product.price | currency:'INR' }}</p>
     </div>
   </div>
   

@@ -8,6 +8,7 @@
         id="email"
         name="email"
         [(ngModel)]="user.email"
+        email
         required
         #email="ngModel"
       />
@@ -28,7 +29,7 @@
         Password is required
       </div>
   
-      <button type="submit" [disabled]="loginForm.invalid" (click)="login()">Login</button>
+      <button type="submit" [disabled]="loginForm.invalid">Login</button>
       <br>
       <br>
       Want to head out of website just click here <app-logout></app-logout>

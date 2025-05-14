@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -9,14 +10,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProductDetailComponent implements OnInit {
   product: any;
-  addToCart(): void {
-    let cart = JSON.parse(localStorage.getItem('cart') || '[]');
-    cart.push(this.product);
-    localStorage.setItem('cart', JSON.stringify(cart));
-    this.router.navigate(['/cart']);
+  addToCart(product: any) {
+    this.cartService.addToCart(product);
+    const count = this.cartService.getCartCount();
+    alert(`Item added to cart! Cart has ${count} items now.`);
   }
 
-  constructor(private router:Router,private route: ActivatedRoute, private http: HttpClient) {}
+  constructor(private router:Router,private route: ActivatedRoute, private http: HttpClient,private cartService:CartService) {}
 
   ngOnInit(): void {
     const productId = this.route.snapshot.paramMap.get('id');

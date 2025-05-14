@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class LogoutComponent implements OnInit {
   logout(){
     localStorage.removeItem('isLoggedIn');
-    this.router.navigate(['/products']);
+    this.router.navigate(['/login']);
   }
   constructor(private router:Router) { }
 

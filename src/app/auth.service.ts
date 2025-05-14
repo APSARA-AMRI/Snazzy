@@ -12,6 +12,6 @@ export class AuthService {
     return this.http.post(this.baseUrl,userData);
   }
   login(email:string,password:string){
-    return this.http.get<any[]>(`http://localhost:3000/user?email=$(email) & password = $(password)`);
+    return this.http.get<any[]>(`http://localhost:3000/user?email=${email}&password=${password}`);
   }
 }

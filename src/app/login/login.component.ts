@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
 
 @Component({
@@ -25,16 +24,16 @@ export class LoginComponent {
     const email=this.user.email;
     const password = this.user.password;
     this.authService.login(email,password).subscribe(
-      res=>{
-        console.log('Login Form Submitted:', this.user);
+      (res)=>{
+        console.log("User Logged In");
         if(res.length>0){
           alert("Login success");
         }
         else{
-          alert("Login failed");
+         alert("Login failed");
         }
       }
-    )
+    );
   }
   
 }

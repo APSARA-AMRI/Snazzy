@@ -12,6 +12,8 @@ import { RegisterComponent } from './register/register.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CartComponent } from './cart/cart.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     ProductListComponent,
     LogoutComponent,
     ProductDetailComponent,
+    CartComponent,
+    NotificationsComponent,
   ],
   imports: [
     BrowserModule,

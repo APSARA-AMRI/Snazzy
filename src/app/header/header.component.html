@@ -14,13 +14,16 @@
       <input type="text" class="search-box" placeholder="Search products..." />
       <i class="fas fa-search search-icon"></i>
     </div>
-    <a routerLink="/notifications" class="icon-btn" title="Notifications">
-      <i class="fas fa-bell"></i>
+    <a [routerLink]="['/notifications']" class="nav-link">
+      <i class="fas fa-bell"></i> <!-- Font Awesome Bell -->
+      <span class="badge" *ngIf="notificationCount > 0">{{ notificationCount }}</span>
     </a>
+    
+    <a routerLink="/cart" class="icon-btn"><i class="fa fa-shopping-cart"></i></a>
     <a routerLink="/register" class="icon-btn">
       <i class="fa fa-user"></i>
+      Hi, Apsara
     </a>
-    <a routerLink="/cart" class="icon-btn"><i class="fa fa-shopping-cart"></i></a>
   </div>
   <div class="seller-container">
     <div class="seller-icon">
